@@ -1,0 +1,43 @@
+{
+    "name": "YS-VS-Code-Extension",
+    "displayName": "YS-VS-Code-Extension",
+    "description": "Yossi Shemi - useful snippets",
+    "version": "1.0.0",
+    "publisher": "YossiShemi",
+    "author": { 
+        "name": "YossiShemi",
+        "email": "yossi20941@gmail.com"
+    },
+    "homepage": "https://github.com/YossiShemi/YS-VS-Code-Extension",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/YossiShemi/YS-VS-Code-Extension.git"
+    },
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            },
+            {
+                "language": "css",
+                "path": "./snippets/css.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/js.json"
+            } ,
+            {
+                "language": "typescript",
+                "path": "./snippets/js.json"
+            }
+        ]
+    }
+}

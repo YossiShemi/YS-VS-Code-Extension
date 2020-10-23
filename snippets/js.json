@@ -1,0 +1,185 @@
+{
+  "imprt": {
+    "prefix": "ys-import",
+    "body": [
+      "import { } from ' ';"
+    ],
+    "description": "imprt"
+  },
+  "Arrow function": {
+    "prefix": "ys-arrowFunction",
+    "body": [
+      "function =()=>{",
+      "}"
+    ],
+    "description": "Arrow function"
+  },
+  "JavaScriptClass": {
+    "prefix": "ys-class-ys",
+    "body": [
+      "export class Car {",
+      "",
+      "    constructor(name, year) {",
+      "      this.name = name;",
+      "      this.year = year;",
+      "    }",
+      "    ",
+      "  }"
+    ],
+    "description": "JavaScriptClass"
+  },
+  "TypeScriptClass": {
+    "prefix": "ys-class-ts",
+    "body": [
+      "export class Car {",
+      "   ",
+      "    public constructor(",
+      "        public name:string,",
+      "        public age:number",
+      "    ) {}",
+      "",
+      "  }"
+    ],
+    "description": "TypeScriptClass"
+  },
+  "RandomNumber": {
+    "prefix": "ys-random-number",
+    "body": [
+      "Math.floor(Math.random()*MaxValueInclude)+minValue"
+    ],
+    "description": "RandomNumber"
+  },
+  "AsynchronousUsingCallback": {
+    "prefix": "ys-asyn-callback",
+    "body": [
+      "getAllNumbers= (successfulCallBack , failureCallBack)=>{",
+      "    setTimeout(() => {",
+      "        try{",
+      "            const arr = [1,2,3];",
+      "            successfulCallBack(arr);",
+      "        }",
+      "        catch (err){",
+      "            failureCallBack(err)",
+      "        }",
+      "    }, 3000);",
+      "}"
+    ],
+    "description": "AsynchronousUsingCallback"
+  },
+  "AsynchronousUsingCallbackUse": {
+    "prefix": "ys-asyn-callback-use",
+    "body": [
+      " this.service.getAllNumbers(",
+      "    (res)=>console.log(res), //123",
+      "    (err)=>console.log(err)",
+      ");"
+    ],
+    "description": "AsynchronousUsingCallbackUse"
+  },
+  "AsynchronousUsingPromise": {
+    "prefix": "ys-asyn-promise",
+    "body": [
+      "getAllNumbers= ()=>{",
+      "  return new Promise ( (resolve, reject)=>{",
+      "    setTimeout(() => {",
+      "        try{",
+      "            const arr = [1,2,3];",
+      "            resolve(arr);",
+      "        }",
+      "        catch (err){",
+      "            reject(err)",
+      "        }",
+      "    }, 3000);",
+      "  });",
+      "}"
+    ],
+    "description": "AsynchronousUsingPromise"
+  },
+  "AsynchronousUsingPromiseUse": {
+    "prefix": "ys-asyn-promise-use",
+    "body": [
+      " this.service.getAllNumbers()",
+      ".then(numbers=>console.log(numbers)) //123",
+      ".catch(err=>console.log(err));"
+    ],
+    "description": "AsynchronousUsingPromiseUse"
+  },
+  "AsynchronousUsingObservable": {
+    "prefix": "ys-asyn-obsrvable",
+    "body": [
+      " getAllNumbers3= ()=>{",
+      "     return Observable.create(observer=>{",
+      "         setTimeout(() => {",
+      "             try{",
+      "                 const arr = [1,2,3];",
+      "                 observer.next(arr);",
+      "             }",
+      "             catch (err){",
+      "                 observer.error(err)",
+      "             }",
+      "         }, 3000);    });",
+      "   }"
+    ],
+    "description": "AsynchronousUsingObservable"
+  },
+  "AsynchronousUsingObservableUse": {
+    "prefix": "ys-asyn-obsrvable-use",
+    "body": [
+      " this.service.getAllNumbers().subscribe(",
+      "     (res)=>{console.log(res);},",
+      "     (err)=>{console.log(err);}",
+      " );"
+    ],
+    "description": "AsynchronousUsingObservableUse"
+  },
+  "ng-if-else": {
+    "prefix": "ys-ng-if-else",
+    "body": [
+      "<ng-container *ngIf=\"expression; else elseTemplate\">",
+      "    ",
+      "</ng-container>",
+      "<ng-template #elseTemplate>",
+      "    ",
+      "</ng-template>"
+    ],
+    "description": "ng-if-else"
+  },
+  "updateState": {
+    "prefix": "ys-updateState",
+    "body": [
+      " updateState = (key, value) => {",
+      "    this.setState({",
+      "      [key]: value",
+      "    });",
+      "  }"
+    ],
+    "description": "updateState"
+  },
+  "ReduceArray": {
+    "prefix": "ys-arr-reduce",
+    "body": [
+      "let sum= arr.reduce((sum,value)=>sum+=value);"
+    ],
+    "description": "ReduceArray"
+  },
+  "FilterArray": {
+    "prefix": "ys-arr-filter",
+    "body": [
+      "let arr = arr.filter (x=>x%2===0);"
+    ],
+    "description": "FilterArray"
+  },
+  "MapArray": {
+    "prefix": "ys-arr-map",
+    "body": [
+      "let arr= arr.map(x=>x*2);"
+    ],
+    "description": "MapArray"
+  }
+
+
+
+
+
+
+}
